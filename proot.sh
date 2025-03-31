@@ -87,7 +87,7 @@ cp .fonts/NotoColorEmoji-Regular.ttf $PREFIX/var/lib/proot-distro/installed-root
 
 #Setup Hardware Acceleration
 pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 wget https://github.com/yanghoeg/Termux_XFCE/raw/main/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
-pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 sudo apt install -y ./mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
+pd login ubuntu --shared-tmp -- env DISPLAY=:1.0 sudo apt install -y --allow-downgrades ./mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
 
 wget https://github.com/yanghoeg/Termux_XFCE/raw/main/ubuntu_etc.sh
 chmod +x ./ubuntu_etc.sh
